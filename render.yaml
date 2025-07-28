@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: debug-tracker-sysmarche-infotech
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: debug_tracker_sysmarche_infotech.wsgi.application
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: DJANGO_SECRET_KEY
+        generateValue: true

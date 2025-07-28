@@ -2,7 +2,7 @@ services:
   - type: web
     name: debug-tracker-sysmarche-infotech
     env: python
-    buildCommand:
+    buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
     startCommand: debug_tracker_sysmarche_infotech.wsgi.application

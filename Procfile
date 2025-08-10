@@ -1,1 +1,0 @@
-web: gunicorn debug_tracker_sysmarche_infotech.wsgi
